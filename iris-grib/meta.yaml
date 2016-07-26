@@ -21,9 +21,11 @@ requirements:
         - python
         - ecmwf_grib
 
-# test:
-#     imports:
-#         - iris_grib
+test:
+    requires:
+        iris
+    commands:
+        - python2.7 setup.py test
 
 about:
     home: http://scitools.org.uk/iris-grib
